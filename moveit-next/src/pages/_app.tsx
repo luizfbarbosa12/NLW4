@@ -1,19 +1,8 @@
-import '../styles/global.css'
-import { challengesContext } from '../contexts/challengeContext'
-import { ChallengeBox } from '../components/challengeBox'
-import { ChallengesProvider } from '../../src/contexts/challengeContext'
-import React from 'react'
-import { CountdownProvider } from '../contexts/countdownContext'
-
+import "../styles/global.css";
+import React from "react";
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <ChallengesProvider>
-      
-        <Component {...pageProps} />
-     
-    </ChallengesProvider>
-  ) 
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default MyApp;
